@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Test-Frontend</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-light hide-for-desktop">
+            <div class="d-flex">
+                <div class="d-flex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar_logo">
+                        <img src="./asset/img/Asset 1.png" alt="">
+                    </div>
+                </div>
+                <div class="login d-flex">
+                    <a href="#"><img src="./asset/img/navbarphone_01.png" alt=""></a>
+                    <a href="#"><img src="./asset/img/navbaruser_01.png" alt=""></a>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./asset/img/Asset 1.png" alt="">
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">> Mua xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">> Bán xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">> Đấu giá</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">> Thẩm định</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">> Thế chấp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container h-100 hide-for-mobile">
+            <div class="row h-100 justify-content-between">
+                <div class="header__logo col-3 align-self-end">
+                    <img class="w-100" src="./asset/img/Asset 1.png" alt="">
+                </div>
+                <div class="header__nav col-8 align-self-end">
+                    <div class="sub-menu">
+                        <div class="hotline">
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            Hotline: 1900 1900
+                        </div>
+                        <div class="profile-links">
+                            <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <a href="#" class="login">Đăng nhập</a>
+                            <a href="#" class="register">Đăng ký</a>
+                        </div>
+                    </div>
+                    <div class="nav-menu ">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Mua xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bán xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Đấu giá</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Thẩm định</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Thế chấp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner__text col-6">
+                    <h2 class="text-uppercase">Chào mừng khai trương</h2>
+                    <div class="d-flex">
+                        <p class="text-uppercase">VivuCar Miễn phí</p>
+                        <span class="text-uppercase">100%</span>
+                    </div>
+                    <h2>Đăng tin & Thẩm định xe</h2>
+                </div>
+            </div>
+
+            <div id="new-btn" class="off">
+                <div class="new-btn__item">
+                    <button class="new-btn active-">MUA XE</button>
+                </div>
+                <div class="new-btn__item">
+                    <button class="new-btn">BÁN XE</button>
+                </div>
+            </div>
+            <div class="banner__search-group row">
+                <div class="buy col-lg-8 col-12">
+                    <a id="btn" class="btn- on-b" href="#">Mua Xe <i class="fa-solid fa-angle-right"></i></a>
+                    <form action=""><input type="text" placeholder="Tìm mua xe nhanh theo từ khóa"><button
+                            class="btn btn-search">
+                            <img src="./asset/img/searchAsset 1.png" alt="">
+                        </button></form>
+                    <div class="row justify-content-between">
+                        <a href="#" class="col-3 card-item active-">
+                            <h5>Chọn hãng xe</h5>
+                            <img src="./asset/img/carAsset 2.png" alt="">
+                        </a>
+                        <a href="#" class="col-3 card-item">
+                            <h5>Chọn loại xe</h5>
+                            <img src="./asset/img/keyAsset 3.png" alt="">
+                        </a>
+                        <a href="#" class="col-3 card-item">
+                            <h5>Khoảng giá</h5>
+                            <img src="./asset/img/tagAsset 5.png" alt="">
+                        </a>
+                        <a href="#" class="col-3 card-item">
+                            <h5>Phân loại xe</h5>
+                            <img src="./asset/img/noteAsset 4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="partner owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="./asset/img/iconLexus.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./asset/img/iconHonda.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./asset/img/iconHuyndai.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./asset/img/iconPeugeot.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./asset/img/iconToyota.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./asset/img/iconMazda.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sell col-4 d-none d-lg-block">
+                    <a class="btn-" href="#">Bán Xe <i class="fa-solid fa-angle-right"></i></a>
+
+                    <div class="">
+                        <span class="d-flex"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Phasellus ut fermentum lacus,
+                                eu vestibulum orci. </p>
+                        </span>
+                        <span class="d-flex"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Suspendisse posuere quis nunc in consequat. Donec vel arcu orci.
+                            </p>
+                        </span>
+                        <span class="d-flex"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Maecenas tortor orci, posuere mattis tempus vel, consectetur quis arcu. Nam non metus
+                                aliquam, bibendum ex quis, gravida tellus.
+                            </p>
+                        </span>
+                    </div>
+                    <button class="btn btn-yellow">Đăng bán xe ngay</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="choose">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-section">Vì sao nên chọn mua xe với carvivu</h2>
+                <div class="title-logo">
+                    <img class="title-logo__img" src="./asset/img/logoAsset 1.png" alt="">
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="row">
+                    <div class="benefit__item col-lg-3 col-6">
+                        <div class="bg-img"><img src="./asset/img/benefit01.png" alt=""></div>
+                        <div>
+                            <h3>Donec velit arcu in neque ut</h3>
+                            <p>Curabitur varius justo vel nisl dignissim, quis vulputate lectus rhoncus. Pellentesque
+                                porttitor congue libero, non pharetra elit </p>
+                        </div>
+                    </div>
+                    <div class="benefit__item col-lg-3 col-6">
+                        <div class="bg-img"><img src="./asset/img/benefit04.png" alt=""></div>
+                        <h3>Phasellus ut ferment umlacus</h3>
+                        <p>Quis vulputate lectus rhoncus. Pellentesque porttitor congue libero, non pharetra elit
+                            dignissim ut. Maecenas egestas ultricies tempor. </p>
+                    </div>
+                    <div class="benefit__item col-lg-3 col-6">
+                        <div class="bg-img"><img src="./asset/img/benefit02.png" alt=""></div>
+                        <h3>Suspendisse blandit iaculis ultrices</h3>
+                        <p>Pellentesque tincidunt, ipsum vel pellentesque sodales, lectus lacus auctor odio, eu pharetra
+                            augue nibh eget lacus. Ut eu risus risus. Nullam </p>
+                    </div>
+                    <div class="benefit__item col-lg-3 col-6">
+                        <div class="bg-img"><img src="./asset/img/benefit03.png" alt=""></div>
+                        <h3>Donec convallis velit non eros sollicitudin</h3>
+                        <p>Proin molestie, massa id fermentum lacinia, ligula ante bibendum arcu, eu semper metus odio a
+                            mi. Suspendisse sed metus felis. Morbi</p>
+                    </div>
+                </div>
+                <div class="readmore row">
+                    <div class="col-lg-6 col-md-12">
+                        <img src="./asset/img/readmore01_1.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <img src="./asset/img/readmore02_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="new">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-section">Xe mới chào bán</h2>
+                <div class="title-logo">
+                    <img class="title-logo__img" src="./asset/img/logoAsset 1.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="product owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="tag-new">
+                                <img class="card-img-top" src="./asset/img/car01.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Etiam vestibulum mattis pellent. Vivamus molestie maximus ante</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcar.svg" width="15px" height="13px" alt="">
+                                        Xe Mới
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconlocation.svg" width="15px" height="13px" alt="">
+                                        Hà Nội
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcontroller.svg" width="15px" height="13px" alt="">
+                                        Tự động
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/icondate.svg" width="15px" height="13px" alt="">
+                                        2015
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <span class="card-price">4 tỷ 650 triệu</span>
+                                </div>
+                                <div class="card-footer__item">
+                                    <div class="card-contact">
+                                        <a href="#">
+                                            <img src="./asset/img/iconphone.svg" width="15px" height="15px"
+                                                alt=""><span>Liên hệ</span>
+                                        </a>
+
+                                        <a href="#">
+                                            <img src="./asset/img/iconheart.svg" width="18px" height="15px" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="tag-new">
+                                <img class="card-img-top" src="./asset/img/car02.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Aliquam vestibulum dui ac erat pulvinar, vel dictum nibh euismod.</p>
+                                </div>
+                                <div class="card-info ">
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcar.svg" width="15px" height="13px" alt="">
+                                        Xe Cũ
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconlocation.svg" width="15px" height="13px" alt="">
+                                        TP HCM
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcontroller.svg" width="15px" height="13px" alt="">
+                                        Số sàn
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/icondate.svg" width="15px" height="13px" alt="">
+                                        2011
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <span class="card-price">890 triệu</span>
+                                </div>
+                                <div class="card-footer__item">
+                                    <div class="card-contact">
+                                        <a href="#">
+                                            <img src="./asset/img/iconphone.svg" width="15px" height="15px"
+                                                alt=""><span>Liên hệ</span>
+                                        </a>
+
+                                        <a href="#">
+                                            <img src="./asset/img/iconheart.svg" width="18px" height="15px" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="tag-new">
+                                <img class="card-img-top" src="./asset/img/car03.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Etiam vestibulum mattis pellent. Vivamus molestie maximus ante</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcar.svg" width="15px" height="13px" alt="">
+                                        Xe Mới
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconlocation.svg" width="15px" height="13px" alt="">
+                                        Đà Nẵng
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcontroller.svg" width="15px" height="13px" alt="">
+                                        Tự động
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/icondate.svg" width="15px" height="13px" alt="">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <span class="card-price">1 tỷ 150 triệu</span>
+                                </div>
+                                <div class="card-footer__item">
+                                    <div class="card-contact">
+                                        <a href="#">
+                                            <img src="./asset/img/iconphone.svg" width="15px" height="15px"
+                                                alt=""><span>Liên hệ</span>
+                                        </a>
+
+                                        <a href="#">
+                                            <img src="./asset/img/iconheart.svg" width="18px" height="15px" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="utility">
+        <div class="container">
+            <div class="row">
+                <div class="utility__img col-lg-6 col-md-12">
+                    <img src="./asset/img/car07.png" alt="">
+                </div>
+                <div class="utility__text col-lg-6 col-md-12">
+                    <h2 class="title-section">
+                        LỢI ÍCH NỔI BẬT KHI BÁN XE QUA CARVIVU
+                    </h2>
+                    <p>Phasellus ut fermentum lacus, eu vestibulum orci. Suspendisse posuere quis nunc in </p>
+                    <div class="text-container">
+                        <span class="d-flex">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Phasellus ut fermentum lacus, eu vestibulum orci. </p>
+                        </span>
+                        <span class="d-flex">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Suspendisse posuere quis nunc in consequat. Donec vel arcu orci.
+                            </p>
+                        </span>
+                        <span class="d-flex">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Maecenas tortor orci, posuere mattis tempus vel, consectetur quis arcu. Nam non metus
+                                aliquam, bibendum ex quis, gravida tellus.
+                            </p>
+                        </span>
+                        <span class="d-flex">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Donec tincidunt imperdiet nisl eget blandit. Aliquam volutpat elit sed feugiat porta.
+                            </p>
+                        </span>
+                        <span class="d-flex">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <p>Duis tristique, odio in ornare pharetra, mi dolor viverra lectus, lacinia venenatis orci
+                                tortor eget magna. Pellentesque sed erat metus. Aenean velit orci, rutrum vel justo nec,
+                                lacinia bibendum justo. </p>
+                        </span>
+                    </div>
+                    <button class="btn btn-yellow btn-md">Đăng bán xe ngay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="favourite">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-section">Xe được quan tâm nhiều nhất</h2>
+                <div class="title-logo">
+                    <img class="title-logo__img" src="./asset/img/logoAsset 1.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="product owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="tag-new">
+                                <img class="card-img-top" src="./asset/img/car04.png" alt="">
+                            </div>
+
+
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Etiam vestibulum mattis pellent. Vivamus molestie maximus ante</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcar.svg" width="15px" height="13px" alt="">
+                                        Xe Mới
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconlocation.svg" width="15px" height="13px" alt="">
+                                        Hà Nội
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcontroller.svg" width="15px" height="13px" alt="">
+                                        Tự động
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/icondate.svg" width="15px" height="13px" alt="">
+                                        2015
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <span class="card-price">4 tỷ 650 triệu</span>
+                                </div>
+                                <div class="card-footer__item">
+                                    <div class="card-contact">
+                                        <a href="#">
+                                            <img src="./asset/img/iconphone.svg" width="15px" height="15px"
+                                                alt=""><span>Liên hệ</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./asset/img/iconheart.svg" width="18px" height="15px" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-product">
+                            <div>
+                                <img class="card-img-top" src="./asset/img/car05.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Aliquam vestibulum dui ac erat pulvinar, vel dictum nibh euismod.</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcar.svg" width="15px" height="13px" alt="">
+                                        Xe Cũ
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconlocation.svg" width="15px" height="13px" alt="">
+                                        TP HCM
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcontroller.svg" width="15px" height="13px" alt="">
+                                        Số sàn
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/icondate.svg" width="15px" height="13px" alt="">
+                                        2011
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <span class="card-price">890 triệu</span>
+                                </div>
+                                <div class="card-footer__item">
+                                    <div class="card-contact">
+                                        <a href="#">
+                                            <img src="./asset/img/iconphone.svg" width="15px" height="15px"
+                                                alt=""><span>Liên hệ</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./asset/img/iconheart.svg" width="18px" height="15px" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="">
+                                <img class="card-img-top" src="./asset/img/car06.png" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Sed hendrerit, lacus nec rhoncs imperdiet, neque
+                                        lectus rhoncus est, vel
+                                        sagittisne neque sed risus.</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcar.svg" width="15px" height="13px" alt="">
+                                        Xe Mới
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconlocation.svg" width="15px" height="13px" alt="">
+                                        Đà Nẵng
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/iconcontroller.svg" width="15px" height="13px" alt="">
+                                        Tự động
+                                    </div>
+                                    <div class="card-info__item">
+                                        <img src="./asset/img/icondate.svg" width="15px" height="13px" alt="">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer ">
+                                <div class="card-footer__item">
+                                    <span class="card-price">1 tỷ 150 triệu</span>
+                                </div>
+                                <div class="card-footer__item">
+                                    <div class="card-contact">
+                                        <a href="#">
+                                            <img src="./asset/img/iconphone.svg" width="15px" height="15px"
+                                                alt=""><span>Liên hệ</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./asset/img/iconheart.svg" width="18px" height="15px" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="interested">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-section">Tin mới từ Carvivu</h2>
+                <div class="title-logo">
+                    <img class="title-logo__img" src="./asset/img/logoAsset 1.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="product owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="">
+                                <img class="card-img-top" src="./asset/img/news02.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Mauris porta malesuada orci a porta. Morbi tempus dui eget viverra congue. Donec
+                                        non nulla a libero ultricies facilisis Ut sed lacus est. Morbi bibendum
+                                        ligula libero, vitae fermentum sem facilisis ut. Praesent nisl tellus, dapibus
+                                        at fermentum id, dapibus a metus. Cras eu arcu vel ex molestie dignissim eu at
+                                        eros. Aenean congue iaculis erat, non mollis est venenatis quis. Donec cursus,
+                                        orci sed rutrum faucibus, dolor risus fringilla justo, at accumsan eros mi vel
+                                        ex. Suspendisse potenti. Cras cursus pulvinar auctor. Sed semper vel risus sed
+                                        dapibus.</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="time">08:25</div>
+                                    <div class="date">12/11/2021</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <a href="#" class="btn-">Xem thêm <i class="fa fa-angle-right"
+                                            aria-hidden="true"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="">
+                                <img class="card-img-top" src="./asset/img/news03.png" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Donec non nulla a libero ultricies facilisis Ut sed lacus est. Morbi bibendum
+                                        ligula libero, vitae fermentum sem facilisis ut Praesent nisl tellus, dapibus
+                                        at fermentum id, dapibus a metus. Cras eu arcu vel ex molestie dignissim eu at
+                                        eros. Aenean congue iaculis erat, non mollis est venenatis quis. Donec cursus,
+                                        orci sed rutrum faucibus, dolor risus fringilla justo, at accumsan eros mi vel
+                                        ex. Suspendisse potenti. Cras cursus pulvinar auctor. Sed semper vel risus sed
+                                        dapibus.</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="time">08:25</div>
+                                    <div class="date">12/11/2021</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <a href="#" class="btn-">Xem thêm <i class="fa fa-angle-right"
+                                            aria-hidden="true"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-product">
+                            <div class="">
+                                <img class="card-img-top" src="./asset/img/news01.png" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>Ut sed lacus est. Morbi bibendum ligula libero, vitae fermentum sem facilisis ut
+                                        Praesent nisl tellus, dapibus at id, dapibus a metus. Cras eu arcu vel ex
+                                        molestie dignissim eu at eros. Aenean
+                                        congue iaculis erat, non mollis est venenatis quis. Donec cursus, orci sed
+                                        rutrum faucibus, dolor risus fringilla justo, at accumsan eros mi vel ex.
+                                        Suspendisse potenti. Cras cursus pulvinar auctor. Sed semper vel risus sed
+                                        dapibus.
+                                    </p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="time">08:25</div>
+                                    <div class="date">12/11/2021</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-footer__item">
+                                    <a href="#" class="btn-">Xem thêm <i class="fa fa-angle-right"
+                                            aria-hidden="true"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-section">Dịch vụ khác từ Carvivu</h2>
+                <div class="title-logo">
+                    <img class="title-logo__img" src="./asset/img/logoAsset 2.png" alt="">
+                </div>
+            </div>
+            <div class="service-slide owl-carousel owl-theme">
+                <div class="item">
+                    <div class="service-item">
+                        <img src="./asset/img/icon001.png" alt="">
+                        <h2>Đấu giá xe</h2>
+                        <a href="#">Tìm hiểu thêm ></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-item">
+                        <img src="./asset/img/icon002.png" alt="">
+                        <h2>Đấu giá xe</h2>
+                        <a href="#">Tìm hiểu thêm ></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-item">
+                        <img src="./asset/img/icon003.png" alt="">
+                        <h2>Đấu giá xe</h2>
+                        <a href="#">Tìm hiểu thêm ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-section">Tin mới từ Carvivu</h2>
+                <div class="title-logo">
+                    <img class="title-logo__img" src="./asset/img/logoAsset 1.png" alt="">
+                </div>
+            </div>
+            <div class="business-slide owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./asset/img/iconporsche01.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./asset/img/iconhuyndai01.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./asset/img/iconhonda01.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./asset/img/iconcadillac01.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./asset/img/icontoyota01.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="function col-lg-3 col-6">
+                    <ul>
+                        <li><a href="#">> Cần mua xe</a></li>
+                        <li><a href="#">> Cần bán xe</a></li>
+                        <li><a href="#">> Đấu giá xe</a></li>
+                        <li><a href="#">> Thẩm định xe</a></li>
+                        <li><a href="#">> Thế chấp xe</a></li>
+                    </ul>
+                </div>
+                <div class="about-us col-lg-3 col-6">
+                    <ul>
+                        <li><a href="#">> Thông tin chung</a></li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Hotline: 1900 1900</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="license">
+                        <img src="./asset/img/footericon01.png" alt="">
+                    </div>
+                    <div class="social d-flex">
+                        <a href="#"><img src="./asset/img/socialfb.png" alt=""></a>
+                        <a href="#"><img src="./asset/img/socialyt.png" alt=""></a>
+                        <a href="#"><img src="./asset/img/socialin.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="./asset/img/Asset 1.png" alt="">
+                    <p>Curabitur varius justo vel nisl dignissim, quis vulputate lectus rhoncus. Pellentesque congue
+                        libero, non pharetra elit dignissim ut. Maecenas egestas ultricies tempor.</p>
+                </div>
+            </div>
+            <div class="company">
+                <h3><i class="fa fa-copyright" aria-hidden="true"></i>2020 | Công ty CP Carvivu Việt Nam</h3>
+                <h5>Địa chỉ: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vestibulum mattis
+                    pellentesque
+                </h5>
+                <div class="d-flex justify-content-center" style="flex-wrap: wrap-reverse;">
+                    <div class="company-info">
+                        Điện thoại: +84.24.1234 5678
+                    </div>
+                    <div class="company-info">
+                        Fax: +84.24.1234 5678
+                    </div>
+                    <div class="company-info">
+                        Email: support@carvivu.vn
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed-items">
+        <a href="#"><img src="./asset/img/iconmess.png" alt=""></a>
+        <a href="#"><img src="./asset/img/iconuppage.png" alt=""></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./owlcarousel/owl.carousel.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.1/wow.min.js"
+        integrity="sha512-697hnYyKs/LXUcdTzK1KBjHBoVIIIWgtvMjZVVpC1I751n4zPCuYVONFL3g+WzfsrGhuKH+g+dLObOQhaOh7pw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
